@@ -1,6 +1,6 @@
 # api id, hash
-API_ID = 11111111
-API_HASH = 'Your api hash'
+API_ID = 23538836
+API_HASH = '928be54e7e1759bce13f6b8b1b9979ee'
 
 USE_TG_BOT = False # True if you want use tg, else False
 BOT_TOKEN = '' # API TOKEN get in @BotFather
@@ -16,12 +16,12 @@ PROXY_TYPE = "socks5" # http/socks5
 WORKDIR = "sessions/"
 
 # использование прокси
-USE_PROXY = True # True/False
+USE_PROXY = False # True/False
 # проверять прокси
-CHECK_PROXY = True
+CHECK_PROXY = False
 
 #то что идет после startapp=
-REF_CODE = "onetime707649803"
+REF_CODE = "onetime5968801165"
 
 # мини задержка 
 MINI_SLEEP = [7, 8] #[min, max]

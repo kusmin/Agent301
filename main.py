@@ -1,21 +1,25 @@
+import asyncio
+import csv
+import os
+
+from data.config import CHECK_PROXY, USE_PROXY, hello
+from utils.agent import Agent
 from utils.core import create_sessions
 from utils.telegram import Accounts
-from utils.agent import Agent
-from data.config import hello,USE_PROXY,CHECK_PROXY
-import asyncio
-import os
-import csv
+
 
 async def main():
     print(hello)
-    action = int(input('Выберите действие:\n1. Начать сбор монет\n2. Создать сессию\n3. Сохранить авторизации\n4. Использовать сохраненные авторизации\n5. Собрать статистику\n\n>'))
+    # action = int(input('Выберите действие:\n1. Начать сбор монет\n2. Создать сессию\n3. Сохранить авторизации\n4. Использовать сохраненные авторизации\n5. Собрать статистику\n\n>'))
     
+    action = 1
     if not os.path.exists('sessions'):
         os.mkdir('sessions')
     
     if not os.path.exists('authorization.txt'):
         with open('authorization.txt', 'w') as file:
             pass
+        
     
     if action == 2:
         await create_sessions()

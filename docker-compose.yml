@@ -1,0 +1,10 @@
+services:
+  agent301:
+    container_name: 'Agent301'
+    build:
+      context: .
+    stop_signal: SIGINT
+    restart: unless-stopped
+    command:
+      - python
+      - main.py
